@@ -68,7 +68,7 @@ describe("EventProxy", function () {
     ep.trigger('event');
     assert.equal(counter, 1, 'counter should have only been incremented once.');
   });
-  
+
   it('assign, then unassign some functions', function () {
     var ep = new EventProxy();
     var counter = 0;
@@ -100,7 +100,7 @@ describe("EventProxy", function () {
     assert.equal(counter, 2, 'counter should have been incremented twice.');
     assert.equal(fun2times, 1, 'fun2 should only been executed once.');
   });
-  
+
   it('once/trigger', function () {
     var ep = EventProxy.create();
     var counter = 0;
